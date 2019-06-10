@@ -1,0 +1,8 @@
+<div class="comp">
+  <div>
+    <h3> A </h3>
+    <p> Count: {{countA}} </p>
+  </div>
+  <button (click)="incrementC()"> C </button>
+</div>
+<app-comp-b (countA)=onCountA($event) [countB]="countB"> </app-comp-b>
